@@ -64,20 +64,3 @@ Something similar to this URL will appear in the browser bar: http://host.docker
 Simply copy the port number from that link and paste it into the following link, replacing only the number: http://localhost:54190/swagger-ui/index.html#/.
 
 After this, you should see the Swagger documentation in your browser.
-
-
-####Español:
-
-Una vez que los servicios estan levantados , Ingresar a http://localhost:8761/ 
-
-dirigirse a la seccion "Instances currently registered with Eureka"
-
-click en cualquier link verde bajo la columna status (dependiendo del Microservicio que desee mirar el Swagger)
-
-aparecera algo similar a este url en la barra del navegador : http://host.docker.internal:54190/actuator/info 
-
-Simplemente, copie el numero de Puerto dentro de ese link y peguelo dentro de el siguiente link, reemplazando solo el numero
-http://localhost:54190/swagger-ui/index.html#/
-
-
-Luego de esto, deberia ver la Documentacion Swagger en su navegador
