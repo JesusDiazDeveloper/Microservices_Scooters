@@ -1,0 +1,12 @@
+server:
+ port: 8081
+spring:
+ cloud:
+  config:
+   server:
+    git:
+     default-label: development
+     uri: https://github.com/meste73/tpe-microservices
+     search-paths: config-data
+ application:
+  name: mcsv-config

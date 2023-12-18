@@ -1,0 +1,71 @@
+server:
+ port: 8080
+eureka:
+ client:
+  fetch-registry: true
+  register-with-eureka: true
+  service-url:
+   default-zone: http://localhost:8761/eureka
+ instance:
+  hostname: localhost
+
+spring:
+ cloud:
+  gateway:
+   discovery:
+    locator:
+     enabled: true
+   routes:
+    - id: mcsv-administrator
+      uri: lb://mcsv-administrator
+      predicates:
+       - Path=/administrator/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-maintenance
+      uri: lb://mcsv-maintenance
+      predicates:
+       - Path=/maintenance/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-scooter
+      uri: lb://mcsv-scooter
+      predicates:
+       - Path=/scooters/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-station
+      uri: lb://mcsv-station
+      predicates:
+       - Path=/stations/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-travel
+      uri: lb://mcsv-travel
+      predicates:
+       - Path=/travels/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-user
+      uri: lb://mcsv-user
+      predicates:
+       - Path=/users/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-user
+      uri: lb://mcsv-user
+      predicates:
+       - Path=/accounts/**
+      filters:
+       - AuthFilter
+
+    - id: mcsv-auth
+      uri: lb://mcsv-auth
+      predicates:
+       - Path=/auth/**

@@ -1,0 +1,10 @@
+spring:
+ application:
+  name: mcsv-gateway
+ cloud:
+  config:
+   enabled: true
+   uri: http://localhost:8081
+   
+jwt:
+ secret: s3cr3t_k3yw0rd.

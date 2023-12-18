@@ -1,0 +1,15 @@
+spring:
+ datasource:
+  url: jdbc:mysql://localhost:3306/Arquitectura?createDatabaseIfNotExist=true
+  username: root
+  password: admin
+ jpa:
+  hibernate:
+   ddl-auto: update
+ application:
+  name: mcsv-scooter
+ cloud:
+  config:
+   enabled: true
+   uri: http://localhost:8081
+distance: 50

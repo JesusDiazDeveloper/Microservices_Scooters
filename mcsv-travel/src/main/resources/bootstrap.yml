@@ -1,0 +1,15 @@
+spring:
+ application:
+  name: mcsv-travel
+ cloud:
+  config:
+   enabled: true
+   uri: http://localhost:8081
+ data:
+  mongodb:
+   host: localhost
+   port: 27017
+   database: arquiTUDAI
+   authentication-database: admin
+   username: root
+   password: 34609763fd

@@ -1,0 +1,14 @@
+spring:
+ datasource:
+  url: jdbc:mysql://localhost:3306/arqui_tpe_administrator?createDatabaseIfNotExist=true
+  username: root
+  password: admin
+ jpa:
+  hibernate:
+   ddl-auto: update
+ application:
+  name: mcsv-administrator
+ cloud:
+  config:
+   enabled: true
+   uri: http://localhost:8081
