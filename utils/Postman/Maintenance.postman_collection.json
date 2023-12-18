@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "a56f5b84-f902-45ea-a4ed-c4976c25e0bf",
+		"name": "Maintenance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973271"
+	},
+	"item": [
+		{
+			"name": "Get All Maintenance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjQ2MzUsImlhdCI6MTcwMDM2MTAzNX0.CR43kakUk_NlHHTPL0UBtIBuZwAoftPIZS7354hB4XU8k56EWGE3hfN9xlPVUJkQ8M3vgaOi94OoR3Psk4z7ww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maintenance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scooters For Maintenance (and set them in maintenance)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjIzMDMsImlhdCI6MTcwMDM1ODcwM30.nLVkWaajy5nZqKd0lGm32uHGYBqd6xX-SQQZE1qBQabmRf7h16TfPnZ2R0jFNL5NUVeEFbYp8-gvrzXwETB5lQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maintenance/scooters/for-maintenance?available=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"scooters",
+						"for-maintenance"
+					],
+					"query": [
+						{
+							"key": "available",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one Maintenance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjQ2MzUsImlhdCI6MTcwMDM2MTAzNX0.CR43kakUk_NlHHTPL0UBtIBuZwAoftPIZS7354hB4XU8k56EWGE3hfN9xlPVUJkQ8M3vgaOi94OoR3Psk4z7ww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maintenance/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Maintenance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjAyNDAsImlhdCI6MTcwMDM1NjY0MH0.iydpvbsqQbmXpRriKLh6AkPwfI_Yn9mF9JdOD-Zija6B9okHkXRtjdNXEHP6klQhGXUlzeutuvKqP-c2NbHbTg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/maintenance/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finish a Maintenance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjQ2MzUsImlhdCI6MTcwMDM2MTAzNX0.CR43kakUk_NlHHTPL0UBtIBuZwAoftPIZS7354hB4XU8k56EWGE3hfN9xlPVUJkQ8M3vgaOi94OoR3Psk4z7ww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\":\"value\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/maintenance/finalize/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"finalize",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Maintenance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjQ2MzUsImlhdCI6MTcwMDM2MTAzNX0.CR43kakUk_NlHHTPL0UBtIBuZwAoftPIZS7354hB4XU8k56EWGE3hfN9xlPVUJkQ8M3vgaOi94OoR3Psk4z7ww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_maintenance\": 2,\r\n        \"start_date\": \"2023-01-02\",\r\n        \"end_date\": \"2023-11-18\",\r\n        \"id_scooter\": 210789,\r\n        \"scooter_km\": 777.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/maintenance/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create one Maintenance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNjQ2MzUsImlhdCI6MTcwMDM2MTAzNX0.CR43kakUk_NlHHTPL0UBtIBuZwAoftPIZS7354hB4XU8k56EWGE3hfN9xlPVUJkQ8M3vgaOi94OoR3Psk4z7ww",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id_maintenance\": 22212332,\r\n        \"start_date\": \"2023-01-02\",\r\n        \"end_date\": \"2023-11-18\",\r\n        \"id_scooter\": 210789,\r\n        \"scooter_km\": 777.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/maintenance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

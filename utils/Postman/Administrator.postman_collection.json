@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "f22cfd08-1a5e-416b-b8b8-e4749b3b3506",
+		"name": "Administrator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973271"
+	},
+	"item": [
+		{
+			"name": "Get All Administrators",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTE4MzEsImlhdCI6MTcwMDM0ODIzMX0.JsgP65tZP81byFU6tPWAHrnq9SzGsoS-jQQoCTZA5kARquLqrH3jC0xfp5mNoS-Psq4ORRSV3EN9TDp2K7c_aA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Administrator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTE4MzEsImlhdCI6MTcwMDM0ODIzMX0.JsgP65tZP81byFU6tPWAHrnq9SzGsoS-jQQoCTZA5kARquLqrH3jC0xfp5mNoS-Psq4ORRSV3EN9TDp2K7c_aA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"Jess\",\r\n  \"password\": \"password\",\r\n  \"rol\": \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/administrator",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Administrator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTE4MzEsImlhdCI6MTcwMDM0ODIzMX0.JsgP65tZP81byFU6tPWAHrnq9SzGsoS-jQQoCTZA5kARquLqrH3jC0xfp5mNoS-Psq4ORRSV3EN9TDp2K7c_aA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"Mati\",\r\n  \"password\": \"password\",\r\n  \"rol\": \"MAINTENANCE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/administrator/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Administrator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTE4MzEsImlhdCI6MTcwMDM0ODIzMX0.JsgP65tZP81byFU6tPWAHrnq9SzGsoS-jQQoCTZA5kARquLqrH3jC0xfp5mNoS-Psq4ORRSV3EN9TDp2K7c_aA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Administrator",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTE4MzEsImlhdCI6MTcwMDM0ODIzMX0.JsgP65tZP81byFU6tPWAHrnq9SzGsoS-jQQoCTZA5kARquLqrH3jC0xfp5mNoS-Psq4ORRSV3EN9TDp2K7c_aA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set a new price for travels",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price_by_hour\": 15.5,\r\n  \"rate_of_increase\": 0.3,\r\n  \"actual_date\": \"2023-11-18T23:05:15.348Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/administrator/travels/price",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"travels",
+						"price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Scooters in operation vs in maintenance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/scooters/in-operation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"scooters",
+						"in-operation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unauthorize an account",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/accounts/id/unauthorize",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"accounts",
+						"id",
+						"unauthorize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authorize an account",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/accounts/id/authorize",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"accounts",
+						"id",
+						"authorize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Travels by Year and Quantity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/travels/filter?year=2023&quantity=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"travels",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "quantity",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total amount between 2 months",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/travels/billing?year=2023&month1=1&month2=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"travels",
+						"billing"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "month1",
+							"value": "1"
+						},
+						{
+							"key": "month2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "----------------No funciona",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/administrator/scooters/for-maintenance?available=false",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"administrator",
+						"scooters",
+						"for-maintenance"
+					],
+					"query": [
+						{
+							"key": "available",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDA2Njk3MjUsImlhdCI6MTcwMDY2NjEyNX0.pYwL6OhT22u4U0jrVimLpytbPXa4h1XKKA3JtXEWsg_7p38cW7NJ2-mWYmTklLGDg5kh0zucBEQbkBiotdK8hg",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

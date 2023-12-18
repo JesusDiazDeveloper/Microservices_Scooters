@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "7e732e19-8416-4e4a-b828-6d2a36fadca0",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973271"
+	},
+	"item": [
+		{
+			"name": "create an account for an user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"dateOfSign\": \"2023-11-19\",\r\n  \"amount\": 0,\r\n  \"mpAccount\": 0,\r\n  \"users\": [\r\n\r\n  ],\r\n  \"available\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/3/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"3",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify one user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 1,\r\n        \"name\": \"meste73\",\r\n        \"cellphone\": 2494380393,\r\n        \"email\": \"elmeste.88@gmail.com\",\r\n        \"firstname\": \"Ezequiel Ernestino\",\r\n        \"surname\": \"Mestelan\",\r\n        \"accounts\": [\r\n            {\r\n                \"id\": 1,\r\n                \"dateOfSign\": \"2023-11-18\",\r\n                \"amount\": 10.0,\r\n                \"mpAccount\": 10,\r\n                \"users\": null,\r\n                \"available\": true\r\n            }\r\n        ]\r\n    },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete one user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"dateOfSign\": \"2023-10-19\",\r\n  \"amount\": 10,\r\n  \"mpAccount\": 10,\r\n  \"users\": [\r\n    \r\n  ],\r\n  \"available\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create an user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 23,\r\n        \"name\": \"jose\",\r\n        \"cellphone\": 2494380393,\r\n        \"email\": \"jose.88@gmail.com\",\r\n        \"firstname\": \"jose\",\r\n        \"surname\": \"pepe\",\r\n        \"accounts\": []\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get scooters near a coordinate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/nearest-scooters/lat/-30/long/-50",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"nearest-scooters",
+						"lat",
+						"-30",
+						"long",
+						"-50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an Account for one user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"dateOfSign\": \"2023-10-19\",\r\n  \"amount\": 10,\r\n  \"mpAccount\": 10,\r\n  \"users\": [\r\n    \r\n  ],\r\n  \"available\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users/2/account/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2",
+						"account",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDA2MjIzODcsImlhdCI6MTcwMDYxODc4N30.HIFzaf73m6rH4gTQyA1lrq6zS_rx9sErfoqHyuQeWBvx_WH4YDefADMpJ_hc3bA8kLM4qkMvPaKUWLbAxVxXeg",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

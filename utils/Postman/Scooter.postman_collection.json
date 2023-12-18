@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "70d93b79-00bc-4c61-b357-188df0c2e659",
+		"name": "Scooter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973271"
+	},
+	"item": [
+		{
+			"name": "Get All Scooters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"fran\",\r\n    \"password\": \"password\",\r\n    \"roles\": [\"ADMIN\",\"MAINTENANCE\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/scooters",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scooter By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/scooters/52",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scooter Report",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/scooters/report",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scooters In Operation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/scooters/in-operation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"in-operation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scooters By Latitude And Longitude",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/scooters/nearest/lat/50/long/50",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"nearest",
+						"lat",
+						"50",
+						"long",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Nearest Station From Scooter Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/scooters/nearest-station/52",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"nearest-station",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Near Stations From Scooter Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/scooters/near-stations/153",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"near-stations",
+						"153"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Scooter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"enabled\": true,\r\n    \"kmsTraveled\": 100,\r\n    \"usedTime\": 50,\r\n    \"latitude\": 250.0,\r\n    \"longitude\": 400.0,\r\n    \"stationId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/scooters",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Scooter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 312,\r\n    \"enabled\": false,\r\n    \"kmsTraveled\": 100.0,\r\n    \"usedTime\": 50.0,\r\n    \"latitude\": 250.0,\r\n    \"longitude\": 400.0,\r\n    \"stationId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/scooters",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Scooter",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/scooters/312",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scooters",
+						"312"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDA2MjIzODcsImlhdCI6MTcwMDYxODc4N30.HIFzaf73m6rH4gTQyA1lrq6zS_rx9sErfoqHyuQeWBvx_WH4YDefADMpJ_hc3bA8kLM4qkMvPaKUWLbAxVxXeg",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

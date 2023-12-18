@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "99319418-b7be-4139-967d-1aef46607876",
+		"name": "Station",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973271"
+	},
+	"item": [
+		{
+			"name": "Get All Stations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/stations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Station By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/stations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Station",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"UNICEN\",\r\n    \"latitude\": 250.0,\r\n    \"longitude\": 400.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stations",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Station",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmcmFuIiwicm9sZXMiOiJBRE1JTixNQUlOVEVOQU5DRSIsImV4cCI6MTcwMDMxMjgyNCwiaWF0IjoxNzAwMzA5MjI0fQ.tA6JKfp3MTZYjVL_TjnFLZFUzu-KjbOPCH7FmOn1C1jlEOGHfAoPlJlLCp18voe3fWX1AwQhLasf8IvGekmTIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/stations/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stations",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

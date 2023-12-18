@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "67ca6d46-5f19-405b-a089-39b87101e92f",
+		"name": "Travel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26973271"
+	},
+	"item": [
+		{
+			"name": "Get All Travels",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6553a175a24d27607df05658\",\r\n    \"id_account\" : 123,\r\n    \"id_user\": 123,\r\n    \"id_scooter\":77777777,\r\n    \"start_date\" : \"2023-11-14T12:00:00\",\r\n    \"ending_date\": \"2023-11-14T15:30:00\",\r\n    \"km\":25.0,\r\n    \"cost\":25.0,\r\n    \"paused\":false,\r\n    \"pause_time\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create travel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_account\" : 2,\r\n    \"id_user\": 2,\r\n    \"id_scooter\":2,\r\n    \"start_date\" : \"2023-11-14T12:00:00\",\r\n    \"ending_date\": \"2023-11-14T15:30:00\",\r\n    \"km\":25.0,\r\n    \"cost\":25.0,\r\n    \"paused\":false,\r\n    \"pause_time\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Travel by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_account\" : 123,\r\n    \"id_user\": 123,\r\n    \"id_scooter\":333333,\r\n    \"start_date\" : \"2023-11-14T12:00:00\",\r\n    \"ending_date\": \"2023-11-14T15:30:00\",\r\n    \"km\":25.0,\r\n    \"cost\":25.0,\r\n    \"paused\":false,\r\n    \"pause_time\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels/6557ffae3bd5f127d5e1d61f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"6557ffae3bd5f127d5e1d61f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Travel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_account\" : 123,\r\n    \"id_user\": 123,\r\n    \"id_scooter\":333333,\r\n    \"start_date\" : \"2023-11-14T12:00:00\",\r\n    \"ending_date\": \"2023-11-14T15:30:00\",\r\n    \"km\":25.0,\r\n    \"cost\":25.0,\r\n    \"paused\":false,\r\n    \"pause_time\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels/6557ffae3bd5f127d5e1d61f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"6557ffae3bd5f127d5e1d61f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Travel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"d\",\r\n    \"id_account\" : 123,\r\n    \"id_user\": 123,\r\n    \"id_scooter\":333333,\r\n    \"start_date\" : \"2023-11-14T12:00:00\",\r\n    \"ending_date\": \"2023-11-14T15:30:00\",\r\n    \"km\":25.0,\r\n    \"cost\":25.0,\r\n    \"paused\":false,\r\n    \"pause_time\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels/d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Pause",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6553a175a24d27607df05658\",\r\n    \"id_account\" : 123,\r\n    \"id_user\": 123,\r\n    \"id_scooter\":77777777,\r\n    \"start_date\" : \"2023-11-14T12:00:00\",\r\n    \"ending_date\": \"2023-11-14T15:30:00\",\r\n    \"km\":25.0,\r\n    \"cost\":25.0,\r\n    \"paused\":false,\r\n    \"pause_time\": 1500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels/paused",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"paused"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Price",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price_by_hour\": 25.50,\r\n  \"rate_of_increase\": 0.05,\r\n  \"actual_date\": \"2023-11-14T12:00:00Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/travels/price",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtain the amount of profits between 2 months of a year.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travels/billing?year=2023&month1=1&month2=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"billing"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "month1",
+							"value": "1"
+						},
+						{
+							"key": "month2",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtain the scooters that made more than x trips in a year.",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDAzNTY2NjEsImlhdCI6MTcwMDM1MzA2MX0.aFIDuoPKTuHbJ6lpFt-TKLCSKZCDFzxxNatOMafwsh6Vf0yr_BTHh_eU9ma8_hQjgdAmuPpg2GzyNp5WdDggWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/travels/filter?year=2023&quantity=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"travels",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2023"
+						},
+						{
+							"key": "quantity",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGVzIjoiQURNSU4sTUFJTlRFTkFOQ0UiLCJleHAiOjE3MDA2MjIzODcsImlhdCI6MTcwMDYxODc4N30.HIFzaf73m6rH4gTQyA1lrq6zS_rx9sErfoqHyuQeWBvx_WH4YDefADMpJ_hc3bA8kLM4qkMvPaKUWLbAxVxXeg",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
